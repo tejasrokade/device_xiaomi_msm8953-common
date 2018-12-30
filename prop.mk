@@ -71,14 +71,22 @@ debug.egl.hw=0 \
 debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
 debug.mdpcomp.logs=0 \
+debug.sf.enable_hwc_vds=1 \
 debug.sf.hw=0 \
+debug.sf.recomputecrop=0 \
 dev.pm.dyn_samplingrate=1 \
 persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
 ro.opengles.version=196610 \
 ro.qualcomm.cabl=0 \
-ro.sf.lcd_density=480
+ro.sf.lcd_density=480 \
+ro.vendor.display.cabl=2 \
+sdm.debug.disable_skip_validate=1 \
+vendor.display.enable_default_color_mode=1 \
+vendor.display.disable_skip_validate=1 \
+vendor.display.enable_default_color_mode=1 \
+vendor.gralloc.enable_fb_ubwc=1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -108,15 +116,16 @@ av.debug.disable.pers.cache=1 \
 media.aac_51_output_enabled=true \
 media.msm8956hw=0 \
 media.stagefright.audio.sink=280 \
-mm.enable.qcom_parser=1048575 \
 mm.enable.smoothstreaming=true \
 mmp.enable.3g2=true \
 vendor.audio.hw.aac.encoder=true \
+vendor.mm.enable.qcom_parser=1048575 \
 vendor.vidc.dec.downscalar_height=1088 \
 vendor.vidc.dec.downscalar_width=1920 \
 vendor.vidc.disable.split.mode=1 \
 vendor.vidc.enc.disable.pq=true \
-vendor.vidc.enc.disable_bframes=1
+vendor.vidc.enc.disable_bframes=1 \
+vendor.video.disable.ubwc=1
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
