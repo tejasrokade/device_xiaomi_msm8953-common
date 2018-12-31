@@ -18,6 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 $(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
+$(call inherit-product, vendor/havoc/config/phone-xxhdpi-4096-dalvik-heap.mk)
+$(call inherit-product, vendor/havoc/config/phone-xxhdpi-2048-hwui-memory.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -126,6 +128,7 @@ PRODUCT_PACKAGES += \
     camera.msm8953 \
     libmm-qcamera \
     Snap \
+    Camera 2 \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0_vendor
 
@@ -151,8 +154,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libgenlock \
     libtinyxml \
-    vendor.display.config@1.0 \
-    vendor.display.config@1.0_vendor
+    vendor.display.config@1.0
 
 # Doze mode
 PRODUCT_PACKAGES += \
